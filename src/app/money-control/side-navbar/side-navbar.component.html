@@ -1,0 +1,19 @@
+<div class="navbar">
+   <h1>Money Control</h1> 
+</div>
+
+<div>
+    <div class="toggle" (click)="toggle()">
+        <mat-icon>menu</mat-icon>
+    </div>
+</div>
+
+<div class="side-panel" [class.slideout]="isToggle">
+    <div class="side-content">
+        <h3 class="head">Money Control</h3>
+        <p class="edit-col" (click)="onDash()">Dashboard</p>
+        <p class="edit-col" (click)="onProfile()">Profile</p>
+        <p class="edit-col" (click)="onHistory()">History</p>
+        <p class="edit-col" (click)="logout()">Log Out</p>
+    </div>
+</div>
